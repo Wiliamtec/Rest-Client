@@ -1,23 +1,27 @@
 package br.com.grupodocidumbo.rest_client.model.dto;
 
-public record InputNota(
-  String valor,
-  String descricao,
-  String cliente_nome,
-  String cliente_documento,
-  String cliente_email,
-  String cliente_cep,
-  String cliente_logradouro,
-  String cliente_numero,
-  String cliente_bairro,
-  String cliente_cidade,
-  String cliente_uf,
-  String cliente_codigo_municipio,
-  String codigo_tributacao,
-  String codigo_tributacao_municipal,
-  String aliquota_sn,
-  String trib_issqn,
-  String tp_ret_issqn
-) {
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
+public class InputNota {
+
+  double valor;
+  private String descricao;
+  private String cliente_nome;
+  private String cliente_documento;
+  private String cliente_email;
+  private String cliente_cep;
+  private String cliente_logradouro;
+  private String cliente_numero;
+  private String cliente_bairro;
+  private String cliente_cidade;
+  private String cliente_uf;
+  private String cliente_codigo_municipio;
+  private String codigo_tributacao;
+  private String codigo_tributacao_municipal;
+  private String aliquota_sn;
+  private String trib_issqn;
+  private String tp_ret_issqn;
 
 }
