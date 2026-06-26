@@ -11,7 +11,7 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/pesquisa")
+@RequestMapping("/consulta")
 public class ConsultaParaWeb {
 
     private final ConsultaCnpjRec consultaCnpjRec;
